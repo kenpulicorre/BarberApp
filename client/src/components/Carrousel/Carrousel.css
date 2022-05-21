@@ -1,0 +1,19 @@
+#slider1{
+    height: 100vh;
+    max-height: 37rem;
+    background-size: 100%;
+    background-image: url("../../img/pexels-thgusstavo-santana-1813272.jpg");
+}
+#slider2{
+    height: 100vh;
+    max-height: 37rem;
+    background-size: 100%;
+    background-image: url("../../img/barberone.jpg");
+}
+
+#slider3{
+    height: 100vh;
+    max-height: 37rem;
+    background-size: 100%;
+    background-image: url("../../img/pexels-rodnae-productions-7697316.jpg");
+}
