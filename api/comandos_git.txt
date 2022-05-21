@@ -1,0 +1,43 @@
+con git diff podemos ver los cambiso que se han realizado en un archivo o varios archivos
+
+git commit ---amend este comando sirve por si el ultimo cambio que hicimos le queremos agregar algo mas que se nos alla olvidado
+
+git checkout --mombre_archivo esto elimina los cambios echos en ese archivo y lo devuelve como estaba
+
+git reset HEAD nombre_archivo esto elimina el cambio cuando ya hemos subido al stage con git add nombre_archivo 
+
+git log --oneline sirve para mostrar los commits echos pero de una forma mas organizada
+git log --oneline | cat esto es por si a la hora de escribir el comando anterior me lo abre en una nueva ventana entonces el pipe cat (| cat) lo que hace es que me lo muestra en la misma ventana 
+git log --oneline --graph sirve para ver en detalle hasta con las ramas 
+
+git reset id_commit esto resetea el repo hasta el id_commit
+git reset --hard id_commit esto me elimina todos los cambios
+git reset --soft id_commit esto elimina el commit pero me lo deja en el staged
+
+git diff id_commit id_commit esto sirve para ver las diferencias entre dos commits
+git diff HEAD~1 esto es como el comando de arriba, solo que simplifica porque ahora indica que el puntero osea head quiere ver los cambios o las diferencias que hay entre ese puntero y un commit menos o el anterior a ese head
+
+git revert HEAD esto revierte los cambios que tenemos actualmente en head
+git revert --no-commit HEAD esto revierte los cambios pero sin hacer un commit
+
+git switch -b nombre_rama sirve para crear una nueva rama y ademas cambiar a ella
+git branch -m old_rama new_rama sirve para cambiar el nombre de una rama
+git branch -d nombre_rama sirve para eliminar una ramna
+
+COMO CONSTRUIR ALIAS EN GIT
+git config --global alias.lodag 'log --oneline --decorate --all --graph' => este ya lo tengo que es para listar todo 
+
+git tag nombre_tag le especificamos como un alias al commit en el que estamos o mejor dicho donde este apuntando head en el momento
+git tag nombre_tag id_commit le ponemos un tag a un commit en especifico
+
+git stash save 'mensaje descriptivo de la tarea que estaba realizando' este comando sirve para guardar lo que estabamos haciendo en cierta area para pasar por ejemplo a otra tarea en especifico 
+
+
+REMOTOS
+
+git remote add nombre_repositorio https://repositorio.git de esta manera agregamos un repositorio
+git pull --rebase origin master esto actualiza el repositorio con todos los cambios
+
+video numero 21
+
+
