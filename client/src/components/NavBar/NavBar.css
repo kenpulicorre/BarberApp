@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+/*===================MENU==========================*/
+
+.menuNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 420px;
+}
+
+.d-flex{
+    margin-right: 10px;
+}
+
+#contadorCarrito{
+    font-size: 20px;
+    margin-bottom: 50px
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    z-index: 1;
+    visibility: hidden;
+}
+
+
+#boton-carrito{
+    padding: 0;
+    height: 0;
+    color: white;
+    border: none;
+}
+
+.menuNav button{
+    margin-top: 5px;
+    color: white;
+    border: none;
+    font-style: italic;
+}
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+
+ #menu a{
+     color:#3f3f3f;
+     
+ }
+
+ .barberia{
+     color: #F7DC6F;
+ }
+
+ .btn{
+     background-color: #F7DC6F;
+     color: black;
+     font-weight: bold;
+ }
+
+ .btn:hover{
+     background-color: #F9E79F;
+     color: black;
+ }
+
+ .navbar-brand{
+     width: 60px;
+     height: 40px;
+     background-size: 100%;
+     margin-top: -20px;
+     background-image: url("https://images.vexels.com/media/users/3/132674/isolated/preview/5de3fc4efa4d8ff72773bfc119c1a8e9-bigote-blanco-hipster-3.png") ;
+ }
+
+.navbar-toggler-icon{
+    border-color: white;
+}
